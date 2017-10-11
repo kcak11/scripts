@@ -2,6 +2,7 @@
 # modify the MEGANAV_MASTER_DIRECTORY value to the path of your workspace where you have meganav-master-phase1-XXXX branches checked out
 # run the below command to allow this script execution
 # chmod +x sync_meganav.sh
+
 MEGANAV_MASTER_DIRECTORY=/Users/kcash/StashWorkspace/MegaNav_Masters
 cd $MEGANAV_MASTER_DIRECTORY/hydra-site-builder
 git -c diff.mnemonicprefix=false -c core.quotepath=false fetch origin
