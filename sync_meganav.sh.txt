@@ -8,7 +8,7 @@
 # you can now run the script from terminal as below:
 # ./sync_meganav.sh
 
-MEGANAV_MASTER_DIRECTORY=/Users/kcash/StashWorkspace/MegaNav_Masters
+MEGANAV_MASTER_DIRECTORY=<path_to_folder_containing_meganav_master_branches>
 cd $MEGANAV_MASTER_DIRECTORY/hydra-site-builder
 git -c diff.mnemonicprefix=false -c core.quotepath=false fetch origin
 git -c diff.mnemonicprefix=false -c core.quotepath=false pull origin master
