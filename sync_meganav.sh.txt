@@ -1,5 +1,5 @@
 # Script for syncing the meganav master branches with master (only PULLs)
-# 
+#
 # Instructions:
 # Remove the .txt extension after you download the file
 # modify the MEGANAV_MASTER_DIRECTORY value to the folder_path of your workspace where you have meganav-master-phase1-XXXX branches checked out
