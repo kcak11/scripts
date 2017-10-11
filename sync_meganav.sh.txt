@@ -1,7 +1,12 @@
 # Script for syncing the meganav master branches with master (only PULLs)
-# modify the MEGANAV_MASTER_DIRECTORY value to the path of your workspace where you have meganav-master-phase1-XXXX branches checked out
-# run the below command to allow this script execution
+#
+# Instructions:
+# Remove the .txt extension after you download the file
+# modify the MEGANAV_MASTER_DIRECTORY value to the folder_path of your workspace where you have meganav-master-phase1-XXXX branches checked out
+# run the below command to allow script execution
 # chmod +x sync_meganav.sh
+# you can now run the script from terminal as below:
+# ./sync_meganav.sh
 
 MEGANAV_MASTER_DIRECTORY=/Users/kcash/StashWorkspace/MegaNav_Masters
 cd $MEGANAV_MASTER_DIRECTORY/hydra-site-builder
