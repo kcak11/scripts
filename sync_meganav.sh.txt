@@ -8,7 +8,7 @@
 # you can now run the script from terminal as below:
 # ./sync_meganav.sh
 
-MEGANAV_MASTER_DIRECTORY=<path_to_folder_containing_meganav_master_branches>
+MEGANAV_MASTER_DIRECTORY=/Users/kcash/StashWorkspace/MegaNav_Masters
 cd $MEGANAV_MASTER_DIRECTORY/hydra-site-builder
 git -c diff.mnemonicprefix=false -c core.quotepath=false fetch origin
 git -c diff.mnemonicprefix=false -c core.quotepath=false pull origin master
@@ -42,5 +42,12 @@ git -c diff.mnemonicprefix=false -c core.quotepath=false fetch origin
 git -c diff.mnemonicprefix=false -c core.quotepath=false pull origin master
 git -c diff.mnemonicprefix=false -c core.quotepath=false submodule update --init --recursive
 git -c diff.mnemonicprefix=false -c core.quotepath=false push -v --tags origin refs/heads/feature/meganav-master-phase1-edgedesign:refs/heads/feature/meganav-master-phase1-edgedesign
+echo ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+echo
+cd $MEGANAV_MASTER_DIRECTORY/dcw-design-sewell
+git -c diff.mnemonicprefix=false -c core.quotepath=false fetch origin
+git -c diff.mnemonicprefix=false -c core.quotepath=false pull origin master
+git -c diff.mnemonicprefix=false -c core.quotepath=false submodule update --init --recursive
+git -c diff.mnemonicprefix=false -c core.quotepath=false push -v --tags origin refs/heads/feature/meganav-master-phase1-dcw_design_sewell:refs/heads/feature/meganav-master-phase1-dcw_design_sewell
 echo ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 echo
