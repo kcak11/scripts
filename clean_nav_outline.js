@@ -16,12 +16,14 @@
                     ifr.onload = function() {
                         var d = ifr.contentWindow.document;
                         var propForm = d.querySelector("form[action*=propertiesView]");
-                        var linkText = propForm.querySelector("ul[if=\"subject.content.cards.hyperlinks\"] a span");
-                        if (linkText) {
-                            var nameField = propForm.querySelector("[name=\"content[displayName]\"]");
-                            if (nameField && nameField.value !== linkText.innerHTML) {
-                                nameField.value = linkText.innerHTML;
-                                propForm.submit();
+                        if (propForm) {
+                            var linkText = propForm.querySelector("ul[if=\"subject.content.cards.hyperlinks\"] a span");
+                            if (linkText) {
+                                var nameField = propForm.querySelector("[name=\"content[displayName]\"]");
+                                if (nameField && nameField.value !== linkText.innerHTML) {
+                                    nameField.value = linkText.innerHTML;
+                                    propForm.submit();
+                                }
                             }
                         }
                     };
